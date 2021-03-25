@@ -46,7 +46,7 @@ before_install:
   fi
 - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then source ./bin/travis/before_install_linux.sh;
   fi
-#- before_install
+- before_install
 install:
 - python -m pip install -r requirements.txt
 - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then ./bin/generate-make-jsonl darwin $BLIS_ARCH --export;
