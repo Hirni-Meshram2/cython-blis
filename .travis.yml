@@ -42,6 +42,7 @@ matrix:
  
  
 before_install:
+- apt-get install python-dev
 - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then source ./bin/travis/before_install_osx.sh;
   fi
 - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then source ./bin/travis/before_install_linux.sh;
