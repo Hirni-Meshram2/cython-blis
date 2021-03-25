@@ -7,20 +7,20 @@ env:
   - CC=gcc-9
 matrix:
   include:
-  - os: osx
-    language: generic
-    env:
-      - MB_PYTHON_VERSION="3.7"
-      - BLIS_ARCH="generic"
-  - os: osx
-    language: generic
-    env:
-      - MB_PYTHON_VERSION="3.7"
-      - BLIS_ARCH="x86_64"
-  - os: linux
-    python: '3.7'
-    env:
-      - BLIS_ARCH="generic"
+  #- os: osx
+  #  language: generic
+  #  env:
+  #    - MB_PYTHON_VERSION="3.7"
+  #    - BLIS_ARCH="generic"
+  #- os: osx
+  #  language: generic
+  #  env:
+  #    - MB_PYTHON_VERSION="3.7"
+  #    - BLIS_ARCH="x86_64"
+  #- os: linux
+  #  python: '3.7'
+  #  env:
+  #    - BLIS_ARCH="generic"
   - os: linux
     language: python
     python: '3.7'
@@ -32,12 +32,12 @@ matrix:
     python: '3.7'
     env:
       - BLIS_ARCH="cortexa57"
-  - os: linux
-    language: shell
-    arch: ppc64le
-    dist: focal
-    env:
-      - BLIS_ARCH="power9"
+  #- os: linux
+  #  language: shell
+  #  arch: ppc64le
+  #  dist: focal
+  #  env:
+  #    - BLIS_ARCH="power9"
  
  
  
